@@ -1,0 +1,94 @@
+</doctype html>
+<html>
+
+
+<head>
+
+    <h1 style = color:blue>
+        Hello and Welcome.
+    </h1>
+
+    <img src='UltraArts Logo (ver 2).png' width=200 height=200 >
+
+    <script type='text/Javascript'>
+
+function doInput() {
+    var name = document.getElementById('name').value;
+    var lname = document.getElementById('lname').value;
+    var age = document.getElementById('age').value;
+
+    alert("Hello " + name + " " + lname + ".");
+
+    if (age >= 18) {
+        alert("An old head, huh? Same here. And it isn't fun.");
+    } else {
+        alert("Still a young one? Lucky. Just wait until 18 years of living on this Earth.");
+    }
+
+    alert('Also ' + name + ', you smell hahaha');
+
+}
+
+</script>
+
+</head>
+
+<body> 
+    <style>
+    body {background-color: lightskyblue;}
+    </style>
+   
+
+    <br/>
+    <br/>
+
+    <paragraph>
+    What's up? This is only a simulation to test my skills in HTML and Javascript coding. I'm using what I've learned in college to make this page.
+
+        <br/>
+        <br/>
+
+        It's a little strange for me since I'm using VSCode instead of the school's domain, but I'm still doing the best I can.
+
+        <br/>
+        <br/>
+
+        You can input your name below. Or anything to be honest, it doesn't really matter. You can click the button to display a popup. It may not work depending on your browser or if I'm not doing it correctly lol
+
+        <br/>
+        <br/>
+
+        
+
+        <br/>
+        <br/>
+
+    </paragraph>
+
+    <div class = 'form-group'>
+        <label for = 'name' class = 'label'> Name: </label>
+        <input type ='text' class = 'form-control' id = 'name'/>
+    </div>
+
+        <br/>
+
+    <div class='form-group'>
+        <label for='lname' class='label'> Last Name: </label>
+        <input type='text' class='form-control' id='lname' />
+    </div>
+
+        <br/>
+
+    <div class='form-group'>
+        <label for='age' class='label'> Age: </label>
+        <input type='text' class='form-control' id='age' />
+    </div>
+
+    <br/>
+    <br/>
+
+    <button type='button' class="btn btn-primary m-5" onclick="doInput()"> Click Here </button>
+
+</body>
+
+</html>
